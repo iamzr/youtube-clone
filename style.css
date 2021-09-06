@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   background: #f1f1f1;
+  font-family: "Roboto", sans-serif;
 }
 
 /* Main elements on the page */
@@ -27,6 +28,7 @@ section {
   background: turquoise;
   height: fit-content;
   flex-grow: 1;
+  margin-left: 24px;
 }
 
 #comments {
@@ -74,12 +76,31 @@ section {
 
 /* Video container */
 #video-container {
-  margin-left: 24px;
   padding: 24px 24px 0 0;
-  min-height: 361px;
 }
 
 iframe {
   width: 100%;
   height: calc(100vw * 9 / 25);
+}
+
+/* About video container */
+#about-video-container {
+  padding: 20px 0 8px 0;
+}
+
+#video-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: var(header, 2.4rem);
+}
+
+#video-stats {
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+#views-postdate {
+  font-size: 14px;
+  color: #606060;
 }
