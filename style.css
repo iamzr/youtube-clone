@@ -4,6 +4,7 @@ body {
   background: #f1f1f1;
 }
 
+/* Main elements on the page */
 header {
   width: auto;
   height: 56px;
@@ -24,7 +25,7 @@ aside {
 
 section {
   background: turquoise;
-  height: 100vh;
+  height: fit-content;
   flex-grow: 1;
 }
 
@@ -69,4 +70,16 @@ section {
   height: 24px;
   width: 24px;
   padding: 8px;
+}
+
+/* Video container */
+#video-container {
+  margin-left: 24px;
+  padding: 24px 24px 0 0;
+  min-height: 361px;
+}
+
+iframe {
+  width: 100%;
+  height: calc(100vw * 9 / 25);
 }
